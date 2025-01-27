@@ -1,0 +1,154 @@
+/* -------------------- FONTS -------------------- */
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+/* -------------------- SEMANTIC SECTIONS -------------------- */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+}
+
+main {
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+figure {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+hr {
+    border-top: 1px solid hsl(30, 18%, 87%);
+    margin-bottom: 30px;
+}
+
+/* -------------------- IMAGE -------------------- */
+
+img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* -------------------- TEXT -------------------- */
+
+h1 {
+    font-family: 'Young Serif';
+    color: hsl(24, 5%, 18%);
+    font-size: 32px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Young Serif';
+    color: hsl(14, 45%, 36%)
+}
+
+p {
+    line-height: 2rem;
+}
+
+/* -------------------- PREPARATION SECTION -------------------- */
+
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.preparation > h3 {
+    font-family: 'Outfit';
+    color: hsl(332, 51%, 32%);
+    margin-top: 0;
+}
+
+.preparation > ul li::marker {
+    color: hsl(332, 51%, 32%) !important;
+}
+
+/* -------------------- LISTS -------------------- */
+
+ul li, ol li {
+    padding-left: 20px;
+    line-height: 2rem;
+}
+
+ul, ol {
+    list-style-position: outside;
+    padding-left: 20px;
+}
+
+ul li::marker, ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+/* -------------------- TABLE -------------------- */
+
+table {
+    width: 100%;
+}
+
+td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 10px 20px;
+}
+
+.last-row {
+    border-bottom: none;
+}
+
+.nutrition-value {
+    font-weight: 600;
+    color: hsl(14, 45%, 36%);
+}
+
+/* -------------------- MOBILE STYLES -------------------- */
+
+@media screen and (max-width: 767.98px) { 
+    main {
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+        padding-bottom: 20px;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    img {
+        border-radius: 0;
+    }
+
+    article {
+        margin: 0 50px;
+    }
+}
